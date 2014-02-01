@@ -47,6 +47,7 @@ class DistroSchema(colander.Schema):
     koji_tag = colander.SchemaNode(colander.String())
     dist_tags = colander.SchemaNode(colander.String())
     downstream_prefix = colander.SchemaNode(colander.String())
+    inherit = colander.SchemaNode(colander.Boolean())
 
 # This is unused, don't expose it for now, to avoid confusing Herlo :)
 #    git_branch = colander.SchemaNode(colander.String(), missing=colander.null)
